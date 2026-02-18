@@ -106,4 +106,57 @@ pair = [(i, j) for i in a for j in b]
 print(pair)
 
 
+#lnbda functions
+
+# 1. Add two numbers
+add = lambda x, y: x + y
+print(add(3, 4))
+
+# 2. Check even
+iseven = lambda x: x % 2 == 0
+print(iseven(6))
+
+# 3. Last character of string
+last = lambda s: s[-1]
+print(last("python"))
+
+# 4. Square numbers using map
+nums = [1, 2, 3]
+sq = list(map(lambda x: x*x, nums))
+print(sq)
+
+# 5. Odd numbers using filter
+odd = list(filter(lambda x: x % 2 != 0, nums))
+print(odd)
+
+# 6. Sort tuples by second value
+t = [(1, 3), (4, 1), (2, 2)]
+print(sorted(t, key=lambda x: x[1]))
+
+# 7. Palindrome check
+pal = lambda s: s == s[::-1]
+print(pal("madam"))
+
+# 8. Max of three numbers
+mx = lambda a, b, c: a if a > b and a > c else b if b > c else c
+print(mx(3, 9, 5))
+
+# 9. Reverse string
+rev = lambda s: s[::-1]
+print(rev("hello"))
+
+# 10. String to int using map
+nums = list(map(lambda x: int(x), ["1", "2", "3"]))
+print(nums)
+
+# 11. Remove empty strings
+lst = ["hi", "", "bye", ""]
+clean = list(filter(lambda x: x != "", lst))
+print(clean)
+
+# 12. Factorial using reduce
+fact = lambda n: reduce(lambda a, b: a*b, range(1, n+1))
+print(fact(5))
+
+
 
