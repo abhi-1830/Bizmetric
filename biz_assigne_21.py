@@ -108,137 +108,128 @@ print(pair)
 
 #lambda functions
 
-# 1. Add two numbers
+# 21. Add two numbers
 add = lambda x, y: x + y
 print(add(3, 4))
 
-# 2. Check even
+# 22. Check even
 iseven = lambda x: x % 2 == 0
 print(iseven(6))
 
-# 3. Last character of string
+# 23. Last character of string
 last = lambda s: s[-1]
 print(last("python"))
 
-# 4. Square numbers using map
+# 24. Square numbers using map
 nums = [1, 2, 3]
 sq = list(map(lambda x: x*x, nums))
 print(sq)
 
-# 5. Odd numbers using filter
+# 25. Odd numbers using filter
 odd = list(filter(lambda x: x % 2 != 0, nums))
 print(odd)
 
-# 6. Sort tuples by second value
+# 26. Sort tuples by second value
 t = [(1, 3), (4, 1), (2, 2)]
-print(sorted(t, key=lambda x: x[1])) # sorted() used to sort element based on key 
+print(sorted(t, key=lambda x: x[1]))
 
-# 7. Palindrome check
+# 27. Palindrome check
 pal = lambda s: s == s[::-1]
 print(pal("madam"))
 
-# 8. Max of three numbers
+# 28. Max of three numbers
 mx = lambda a, b, c: a if a > b and a > c else b if b > c else c
 print(mx(3, 9, 5))
 
-# 9. Reverse string
+# 29. Reverse string
 rev = lambda s: s[::-1]
 print(rev("hello"))
 
-# 10. String to int using map
+# 30. String to int using map
 nums = list(map(lambda x: int(x), ["1", "2", "3"]))
 print(nums)
 
-# 11. Remove empty strings
+# 31. Remove empty strings
 lst = ["hi", " ", "bye", ""]
 clean = list(filter(lambda x: x != "", lst))
 print(clean)
 
-
-# 13. Larger of two numbers
+# 32. Larger of two numbers
 big = lambda a, b: a if a > b else b
 print(big(4, 9))
 
-# 14. Divisible by 5
+# 33. Divisible by 5
 d5 = lambda x: x % 5 == 0
 print(d5(20))
 
-# 15. Add 10 to each element
+# 34. Add 10 to each element
 nums = [1, 2, 3]
 plus10 = list(map(lambda x: x + 10, nums))
 print(plus10)
 
-# 16. Sort list of dict by age
+# 35. Sort list of dict by age
 data = [{"age": 25}, {"age": 20}]
 print(sorted(data, key=lambda x: x["age"]))
 
-# 17. Check vowel
+# 36. Check vowel
 vowel = lambda c: c.lower() in "aeiou"
 print(vowel("a"))
 
-# 18. Words length > 5
+# 37. Words length > 5
 words = ["python", "java", "programming"]
 long = list(filter(lambda x: len(x) > 5, words))
 print(long)
 
-# 19. Area of circle
-import math
-from math import *
+# 38. Area of circle
 area = lambda r: math.pi * r * r
 print(area(5))
 
-# 20. Remove duplicates
+# 39. Remove duplicates
 lst = [1, 2, 2, 3]
 nodup = list(filter(lambda x: lst.count(x) == 1, lst))
 print(nodup)
 
-# 21. Product of list
+# 40. Product of list
 nums = [1, 2, 3, 4]
 prod = reduce(lambda a, b: a*b, nums)
 print(prod)
 
-22. Absolute value
+# 41. Absolute value
 ab = lambda x: x if x >= 0 else -x
 print(ab(-7))
 
-# 23. Sort strings by length
+# 42. Sort strings by length
 s = ["hi", "hello", "bye"]
 print(sorted(s, key=lambda x: len(x)))
 
-# 24. Uppercase characters from string
+# 43. Uppercase characters from string
 s = "PyThOn"
 up = list(filter(lambda x: x.isupper(), s))
 print(up)
 
-# 25. Square if even, cube if odd
+# 44. Square if even, cube if odd
 cal = lambda x: x*x if x % 2 == 0 else x*x*x
 print(cal(3))
 
-# 26. Celsius to Fahrenheit
+# 46. Celsius to Fahrenheit
 c2f = lambda c: (c * 9/5) + 32
 print(c2f(30))
 
-# 27. Anagram check
+# 47. Anagram check
 ana = lambda a, b: sorted(a) == sorted(b)
 print(ana("listen", "silent"))
 
-# 28. Numeric values from mixed list
+# 48. Numeric values from mixed list
 mix = [1, "a", 3, "b"]
 num = list(filter(lambda x: type(x) == int, mix))
 print(num)
 
-# 29. Any negative number
+# 49. Any negative number
 nums = [1, -2, 3]
 print(any(map(lambda x: x < 0, nums)))
 
-# 30. Lambda returning multiplier function
+# 50. Lambda returning multiplier function
 mul = lambda b: lambda x: x * b
 f = mul(5)
 print(f(10))
-
-
-
-
-
-
 
