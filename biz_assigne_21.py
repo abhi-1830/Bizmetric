@@ -158,5 +158,26 @@ print(clean)
 fact = lambda n: reduce(lambda a, b: a*b, range(1, n+1))
 print(fact(5))
 
+# 13. Larger of two numbers
+big = lambda a, b: a if a > b else b
+print(big(4, 9))
+
+# 14. Divisible by 5
+d5 = lambda x: x % 5 == 0
+print(d5(20))
+
+# 15. Add 10 to each element
+nums = [1, 2, 3]
+plus10 = list(map(lambda x: x + 10, nums))
+print(plus10)
+
+# 16. Sort list of dict by age
+data = [{"age": 25}, {"age": 20}]
+print(sorted(data, key=lambda x: x["age"]))
+
+# 17. Check vowel
+vowel = lambda c: c.lower() in "aeiou"
+print(vowel("a"))
+
 
 
