@@ -213,6 +213,19 @@ s = "PyThOn"
 up = list(filter(lambda x: x.isupper(), s))
 print(up)
 
+# 25. Square if even, cube if odd
+cal = lambda x: x*x if x % 2 == 0 else x*x*x
+print(cal(3))
+
+# 26. Celsius to Fahrenheit
+c2f = lambda c: (c * 9/5) + 32
+print(c2f(30))
+
+# 27. Anagram check
+ana = lambda a, b: sorted(a) == sorted(b)
+print(ana("listen", "silent"))
+
+
 
 
 
