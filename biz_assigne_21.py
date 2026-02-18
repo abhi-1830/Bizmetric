@@ -106,7 +106,7 @@ pair = [(i, j) for i in a for j in b]
 print(pair)
 
 
-#lnbda functions
+#lambda functions
 
 # 1. Add two numbers
 add = lambda x, y: x + y
@@ -131,7 +131,7 @@ print(odd)
 
 # 6. Sort tuples by second value
 t = [(1, 3), (4, 1), (2, 2)]
-print(sorted(t, key=lambda x: x[1]))
+print(sorted(t, key=lambda x: x[1])) # sorted() used to sort element based on key 
 
 # 7. Palindrome check
 pal = lambda s: s == s[::-1]
@@ -150,13 +150,10 @@ nums = list(map(lambda x: int(x), ["1", "2", "3"]))
 print(nums)
 
 # 11. Remove empty strings
-lst = ["hi", "", "bye", ""]
+lst = ["hi", " ", "bye", ""]
 clean = list(filter(lambda x: x != "", lst))
 print(clean)
 
-# 12. Factorial using reduce
-fact = lambda n: reduce(lambda a, b: a*b, range(1, n+1))
-print(fact(5))
 
 # 13. Larger of two numbers
 big = lambda a, b: a if a > b else b
@@ -224,6 +221,21 @@ print(c2f(30))
 # 27. Anagram check
 ana = lambda a, b: sorted(a) == sorted(b)
 print(ana("listen", "silent"))
+
+# 28. Numeric values from mixed list
+mix = [1, "a", 3, "b"]
+num = list(filter(lambda x: type(x) == int, mix))
+print(num)
+
+# 29. Any negative number
+nums = [1, -2, 3]
+print(any(map(lambda x: x < 0, nums)))
+
+# 30. Lambda returning multiplier function
+mul = lambda b: lambda x: x * b
+f = mul(5)
+print(f(10))
+
 
 
 
