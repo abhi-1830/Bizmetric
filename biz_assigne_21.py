@@ -200,6 +200,19 @@ nums = [1, 2, 3, 4]
 prod = reduce(lambda a, b: a*b, nums)
 print(prod)
 
+22. Absolute value
+ab = lambda x: x if x >= 0 else -x
+print(ab(-7))
+
+# 23. Sort strings by length
+s = ["hi", "hello", "bye"]
+print(sorted(s, key=lambda x: len(x)))
+
+# 24. Uppercase characters from string
+s = "PyThOn"
+up = list(filter(lambda x: x.isupper(), s))
+print(up)
+
 
 
 
