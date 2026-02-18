@@ -179,5 +179,28 @@ print(sorted(data, key=lambda x: x["age"]))
 vowel = lambda c: c.lower() in "aeiou"
 print(vowel("a"))
 
+# 18. Words length > 5
+words = ["python", "java", "programming"]
+long = list(filter(lambda x: len(x) > 5, words))
+print(long)
+
+# 19. Area of circle
+import math
+from math import *
+area = lambda r: math.pi * r * r
+print(area(5))
+
+# 20. Remove duplicates
+lst = [1, 2, 2, 3]
+nodup = list(filter(lambda x: lst.count(x) == 1, lst))
+print(nodup)
+
+# 21. Product of list
+nums = [1, 2, 3, 4]
+prod = reduce(lambda a, b: a*b, nums)
+print(prod)
+
+
+
 
 
